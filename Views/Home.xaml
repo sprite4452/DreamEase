@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             xmlns:local="clr-namespace:CustomIconFont"
+             x:Class="DreamEase.Views.Home"
+             Title="Home">
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#101923"/>
+    </Page.Behaviors>
+    <VerticalStackLayout>
+        <Image Source="logo.png" 
+               HorizontalOptions="Center"
+               />
+
+        <Button Text="Relaxing Sleep Music"
+                FontSize="20"
+                TextColor="White"
+                HeightRequest="100"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Margin="10"
+                CornerRadius="100" 
+                Clicked="musicpageclick">
+            <Button.ImageSource>
+                <FontImageSource Glyph="{x:Static local:IconFont.My_library_music}"
+                                 Size="50"
+                                 FontFamily="Icon" />
+            </Button.ImageSource>
+        </Button>
+
+        <Button Text="Sleeping Tips"
+                FontSize="20"
+                TextColor="White"
+                HeightRequest="100"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Margin="10"
+                CornerRadius="100" 
+                Clicked="tippageclick">
+            <Button.ImageSource>
+                <FontImageSource Glyph="{x:Static local:IconFont.Tips_and_updates}"
+                                 Size="50"
+                                 FontFamily="Icon" />
+            </Button.ImageSource> 
+        </Button>
+    
+        <Button Text="Enter Sleep Data"
+                FontSize="20"
+                TextColor="White"
+                HeightRequest="100"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                Margin="10"
+                CornerRadius="100"
+                Clicked="entrypageclicked">
+            <Button.ImageSource>
+                <FontImageSource Glyph="{x:Static local:IconFont.Edit_document}"
+                                 Size="50"
+                                 FontFamily="Icon" />
+            </Button.ImageSource>
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>
