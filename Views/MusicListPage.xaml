@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DreamEase.Views.MusicListPage"
+             xmlns:local="clr-namespace:CustomIconFont"
+             Title="Music">
+    
+    <ScrollView>
+        <Grid   Margin="20"
+                RowDefinitions="auto,auto,auto,auto,auto,auto"
+                >
+            
+            <ImageButton  
+                Grid.Row="1"
+                Margin="10"
+                Source="https://i.scdn.co/image/ab67616d0000b273505b636f6fcf0b77b73a1400" 
+                HeightRequest="170"
+                Aspect="AspectFill"
+                CornerRadius="30" 
+                Clicked="MoonClick"/>
+            <Label  
+                Grid.Row="1"
+                Margin="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontSize="40"
+                FontFamily="Icon" 
+                x:Name="moonstatus"
+                Text="{x:Static local:IconFont.Play_arrow}"
+                />
+
+            <ImageButton  
+                Grid.Row="2"
+                Margin="10"
+                Source="https://wallpapercave.com/wp/wp11859438.jpg" 
+                HeightRequest="170"
+                Aspect="AspectFill"
+                CornerRadius="30"
+                Clicked="WaterClick"
+                />
+            <Label  
+                Grid.Row="2"
+                Margin="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontSize="40"
+                FontFamily="Icon" 
+                x:Name="waterstatus"
+                Text="{x:Static local:IconFont.Play_arrow}"
+                />
+
+            <ImageButton  
+                Grid.Row="3"
+                Margin="10"
+                Source="https://i.ytimg.com/vi/BGcJi6t_yLw/maxresdefault.jpg" 
+                HeightRequest="170"
+                Aspect="AspectFill"
+                CornerRadius="30"
+                Clicked="WindClick"/>
+            <Label  
+                Grid.Row="3"
+                Margin="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontSize="40"
+                FontFamily="Icon" 
+                x:Name="windstatus"
+                Text="{x:Static local:IconFont.Play_arrow}"
+                />
+
+            <ImageButton  
+                Grid.Row="4"
+                Margin="10"
+                Source="https://wallpaper.forfun.com/fetch/d8/d8ca237f706b3a0742d0e593af5e6e14.jpeg" 
+                HeightRequest="170"
+                Aspect="AspectFill"
+                CornerRadius="30"
+                Clicked="RainClick"/>
+            <Label  
+                Grid.Row="4"
+                Margin="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontSize="40"
+                FontFamily="Icon" 
+                x:Name="rainstatus"
+                Text="{x:Static local:IconFont.Play_arrow}"
+                />
+
+            <ImageButton  
+                Grid.Row="5"
+                Margin="10"
+                Source="https://c.saavncdn.com/497/Serene-Lofi-Soundscapes-for-Meditation-Unknown-2024-20240205194626-500x500.jpg" 
+                HeightRequest="170"
+                Aspect="AspectFill"
+                Clicked="MeditationClick"
+                CornerRadius="30" />
+            <Label  
+                Grid.Row="5"
+                Margin="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontSize="40"
+                FontFamily="Icon" 
+                x:Name="medstatus"
+                Text="{x:Static local:IconFont.Play_arrow}"
+    />
+        </Grid>
+    </ScrollView>
+</ContentPage>
