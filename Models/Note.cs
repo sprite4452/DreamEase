@@ -9,6 +9,8 @@ namespace DreamEase.Models;
 public class Note
 {
     [PrimaryKey, AutoIncrement]
+    public int ID { get; set; }
+    public string ImageSource { get; set; }
     public DateTime Date { get; set; } = DateTime.Now;
     public TimeSpan StartTime { get; set; } = DateTime.Now.TimeOfDay;
     public TimeSpan WakeTime { get; set; } = DateTime.Now.TimeOfDay;
