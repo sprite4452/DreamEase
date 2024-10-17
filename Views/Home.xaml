@@ -10,7 +10,7 @@
     </Page.Behaviors>
     <VerticalStackLayout>
         <Image Source="logo.png" 
-               HorizontalOptions="Center"
+               Margin="60"
                />
 
         <Button Text="Relaxing Sleep Music"
