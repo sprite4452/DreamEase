@@ -13,6 +13,7 @@ namespace DreamEase.Views
             InitializeComponent();
             
             imageSources = new List<string>
+
             {
                 "face_1",
                 "face_2",
